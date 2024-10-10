@@ -1,0 +1,333 @@
+  [1m[35m (56.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `datos_estudiante_api_test`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `datos_estudiante_api_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (11.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `estudiantes` CASCADE[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE `estudiantes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `nombres` varchar(255), `apellidos` varchar(255), `carrera` varchar(255), `carnet` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20241003175833)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'test', '2024-10-03 18:28:22.451686', '2024-10-03 18:28:22.451689') RETURNING `key`[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.7ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', '52318e29c85986b5418ee8d52d593ca8632a6370', '2024-10-03 18:28:22.455341', '2024-10-03 18:28:22.455343') RETURNING `key`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxx' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes` ORDER BY `estudiantes`.`id` ASC LIMIT 1[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Create (1.8ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, '2024-10-03 18:40:22.995969', '2024-10-03 18:40:22.995969') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Update (0.3ms)[0m  [1m[33mUPDATE `estudiantes` SET `estudiantes`.`carnet` = 'dummy value', `estudiantes`.`updated_at` = '2024-10-03 18:40:22.999818' WHERE `estudiantes`.`id` = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'dummy value' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'DUMMY VALUE' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxx' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEstudiante Load (0.2ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes` ORDER BY `estudiantes`.`id` ASC LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Create (0.4ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES (NULL, NULL, NULL, NULL, '2024-10-03 18:40:34.724255', '2024-10-03 18:40:34.724255') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Update (0.2ms)[0m  [1m[33mUPDATE `estudiantes` SET `estudiantes`.`carnet` = 'dummy value', `estudiantes`.`updated_at` = '2024-10-03 18:40:34.726351' WHERE `estudiantes`.`id` = 2[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'dummy value' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'DUMMY VALUE' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.4ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.705155', '2024-10-03 18:50:40.705155') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.719708', '2024-10-03 18:50:40.719708') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.725435', '2024-10-03 18:50:40.725435') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.732096', '2024-10-03 18:50:40.732096') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.738126', '2024-10-03 18:50:40.738126') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.745998', '2024-10-03 18:50:40.745998') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.753071', '2024-10-03 18:50:40.753071') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxxx' LIMIT 1[0m
+  [1m[36mEstudiante Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = 'xxxxxxxx' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mEstudiante Create (0.3ms)[0m  [1m[32mINSERT INTO `estudiantes` (`nombres`, `apellidos`, `carrera`, `carnet`, `created_at`, `updated_at`) VALUES ('Juan', 'Pérez', 'Ingeniería', '12345678', '2024-10-03 18:50:40.760083', '2024-10-03 18:50:40.760083') RETURNING `id`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '12345678' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.8ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/estudiantes" for 127.0.0.1 at 2024-10-07 13:29:15 -0600
+Processing by EstudiantesController#index as JSON
+  [1m[36mEstudiante Load (0.9ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes`[0m
+Completed 200 OK in 19ms (Views: 1.6ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.4ms)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/estudiantes" for 127.0.0.1 at 2024-10-07 13:29:15 -0600
+Processing by EstudiantesController#create as HTML
+  Parameters: {"nombres"=>"Juan", "apellidos"=>"Pérez", "carrera"=>"Ingeniería Telemática", "carnet"=>"20240001", "estudiante"=>{"nombres"=>"Juan", "apellidos"=>"Pérez", "carrera"=>"Ingeniería Telemática", "carnet"=>"20240001"}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Content in 22ms (Views: 1.8ms | ActiveRecord: 11.0ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started GET "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:29:15 -0600
+Processing by EstudiantesController#index as JSON
+  [1m[36mEstudiante Load (0.6ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes`[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (4.9ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started PUT "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:29:15 -0600
+  
+ActionController::RoutingError (No route matches [PUT] "/estudiantes"):
+  
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started DELETE "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:29:15 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/estudiantes"):
+  
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/estudiantes" for 127.0.0.1 at 2024-10-07 13:31:21 -0600
+Processing by EstudiantesController#index as JSON
+  [1m[36mEstudiante Load (0.6ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes`[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/estudiantes" for 127.0.0.1 at 2024-10-07 13:31:21 -0600
+Processing by EstudiantesController#create as HTML
+  Parameters: {"nombres"=>"Juan", "apellidos"=>"Pérez", "carrera"=>"Ingeniería Telemática", "carnet"=>"20240001", "estudiante"=>{"nombres"=>"Juan", "apellidos"=>"Pérez", "carrera"=>"Ingeniería Telemática", "carnet"=>"20240001"}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Content in 9ms (Views: 1.0ms | ActiveRecord: 3.7ms (1 query, 0 cached) | GC: 0.3ms)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started GET "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:31:21 -0600
+Processing by EstudiantesController#index as JSON
+  [1m[36mEstudiante Load (0.3ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes`[0m
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started PUT "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:31:21 -0600
+  
+ActionController::RoutingError (No route matches [PUT] "/estudiantes"):
+  
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started DELETE "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:31:21 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/estudiantes"):
+  
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/estudiantes" for 127.0.0.1 at 2024-10-07 13:38:09 -0600
+Processing by EstudiantesController#index as JSON
+  [1m[36mEstudiante Load (0.7ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes`[0m
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.4ms)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+Started POST "/estudiantes" for 127.0.0.1 at 2024-10-07 13:38:09 -0600
+Processing by EstudiantesController#create as HTML
+  Parameters: {"nombres"=>"Juan", "apellidos"=>"Pérez", "carrera"=>"Ingeniería Telemática", "carnet"=>"20240001", "estudiante"=>{"nombres"=>"Juan", "apellidos"=>"Pérez", "carrera"=>"Ingeniería Telemática", "carnet"=>"20240001"}}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Content in 10ms (Views: 1.5ms | ActiveRecord: 3.8ms (1 query, 0 cached) | GC: 0.9ms)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started GET "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:38:09 -0600
+Processing by EstudiantesController#index as JSON
+  [1m[36mEstudiante Load (0.6ms)[0m  [1m[34mSELECT `estudiantes`.* FROM `estudiantes`[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started PUT "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:38:09 -0600
+  
+ActionController::RoutingError (No route matches [PUT] "/estudiantes"):
+  
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mEstudiante Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `estudiantes` WHERE `estudiantes`.`carnet` = '20240001' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Started DELETE "/estudiantes/" for 127.0.0.1 at 2024-10-07 13:38:09 -0600
+  
+ActionController::RoutingError (No route matches [DELETE] "/estudiantes"):
+  
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m

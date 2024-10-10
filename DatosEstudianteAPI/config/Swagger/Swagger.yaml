@@ -1,0 +1,52 @@
+openapi: 3.0.1
+info:
+  title: Datos Estudiante API
+  description: API para gestionar datos de estudiantes.
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /estudiantes:
+    get:
+      summary: Obtener lista de estudiantes
+      responses:
+        '200':
+          description: Lista de estudiantes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Estudiante'
+    post:
+      summary: Crear un nuevo estudiante
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Estudiante'
+      responses:
+        '201':
+          description: Estudiante creado exitosamente
+        '422':
+          description: Error de validación
+
+components:
+  schemas:
+    Estudiante:
+      type: object
+      properties:
+        nombres:
+          type: string
+        apellidos:
+          type: string
+        carrera:
+          type: string
+        carnet:
+          type: string
+      required:
+        - nombres
+        - apellidos
+        - carrera
+        - carnet
